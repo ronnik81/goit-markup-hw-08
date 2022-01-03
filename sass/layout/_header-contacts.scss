@@ -3,8 +3,11 @@
   font-weight: 500;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  display: flex;
+  display: none;
   margin-left: auto;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .site-contacts__item:not(:last-child) {

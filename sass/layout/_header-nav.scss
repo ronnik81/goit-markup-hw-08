@@ -8,7 +8,10 @@
   font-weight: 500;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  display: flex;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .site-nav .site-nav__item:not(:last-child) {

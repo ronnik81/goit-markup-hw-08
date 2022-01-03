@@ -1,0 +1,17 @@
+.mobile-menu {
+  margin-left: auto;
+}
+
+.mobile-menu__button {
+  border: none;
+  background-color: transparent;
+}
+
+.mobile-menu__icon {
+  fill: var(--brand-color-main);
+  &:hover,
+  &:focus {
+    fill: var(--brand-color-focus);
+    transition: fill var(--timing-function);
+  }
+}
