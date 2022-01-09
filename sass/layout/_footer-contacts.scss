@@ -1,20 +1,13 @@
 .footer-contacts {
   text-align: center;
+  @media screen and (min-width: 1600px) {
+    margin-right: 70px;
+  }
 }
 
 .footer-contacts__item:not(:last-child) {
   margin-bottom: 9px;
 }
-
-// .footer-contacts .footer-list-item:not(:last-child) {
-//   margin-bottom: 9px;
-// }
-
-// @media screen and (max-width: 1600px) {
-//   .footer-contacts .footer-list-item:not(:last-child) {
-//     margin-bottom: 8px;
-//   }
-// }
 
 .footer-contacts__adress {
   font-size: 14px;
