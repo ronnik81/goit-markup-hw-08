@@ -1,6 +1,10 @@
 .footer-social-wrap {
-  margin-top: 12px;
-  margin-left: 70px;
+  text-align: center;
+  margin-top: 60px;
+  @media screen and (min-width: 1600px) {
+    margin-top: 12px;
+    margin-left: 70px;
+  }
 }
 
 .footer-social-title {
@@ -14,6 +18,7 @@
 
 .footer-social {
   display: flex;
+  justify-content: center;
   margin-top: 20px;
 }
 

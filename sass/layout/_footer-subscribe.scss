@@ -1,6 +1,8 @@
 .footer-subscribe-section {
-  margin-top: 12px;
-  margin-left: auto;
+  // margin-top: 12px;
+  // margin-left: auto;
+  margin-top: 60px;
+  text-align: center;
 }
 
 .footer-subcribe-title {
@@ -13,13 +15,14 @@
 }
 
 .footer-subcribe {
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
+  // display: flex;
+  // align-items: center;
+  // margin-top: 20px;
 }
 
 .footer-subcribe__input {
-  width: 358px;
+  // width: 358px;
+  width: 100%;
   height: 50px;
   font-size: 16px;
   font-weight: 400;
@@ -31,6 +34,7 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  margin-top: 20px;
 }
 
 .footer-subscribe__btn {
@@ -45,11 +49,14 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-style: none;
-  margin-left: 12px;
   border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
+  // margin-left: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
 }
 
 .footer-subscribe__icon {
