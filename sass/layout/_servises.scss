@@ -1,3 +1,13 @@
+.servises {
+  visibility: hidden;
+  position: absolute;
+  @media screen and (min-width: 1600px) {
+    position: relative;
+    visibility: visible;
+    padding-bottom: 94px;
+  }
+}
+
 .services__title {
   font-size: 36px;
   font-weight: 700;
@@ -8,19 +18,19 @@
   margin-bottom: 50px;
 }
 
-.services-list {
+.services__list {
   display: flex;
   justify-content: center;
 }
 
-.services-list__item {
+.services__item {
   position: relative;
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
 
-.services-list__text {
+.services__text {
   position: absolute;
   width: 100%;
   left: 0;
@@ -34,13 +44,4 @@
   color: #ffffff;
   padding: 27px 0;
   background-color: rgba(47, 48, 58, 0.8);
-}
-
-.servises-section {
-  visibility: hidden;
-  position: absolute;
-  @media screen and (min-width: 1600px) {
-    position: relative;
-    visibility: visible;
-  }
 }
