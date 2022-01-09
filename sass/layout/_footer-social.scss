@@ -1,13 +1,16 @@
-.footer-social-wrap {
+.footer-social {
   text-align: center;
   margin-top: 60px;
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
   @media screen and (min-width: 1600px) {
     margin-top: 12px;
     margin-left: 70px;
   }
 }
 
-.footer-social-title {
+.footer-social__title {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -16,7 +19,7 @@
   color: #ffffff;
 }
 
-.footer-social {
+.footer-social__list {
   display: flex;
   justify-content: center;
   margin-top: 20px;

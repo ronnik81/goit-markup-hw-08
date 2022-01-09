@@ -3,9 +3,25 @@
   padding: 60px 0;
 }
 
+// .footer-container {
+//   display: flex;
+//   @media screen and (max-width: 767px) {
+//     display: block;
+//   }
+// }
+
+// .footer-wrap {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+// }
+
 .footer-container {
-  display: flex;
-  @media screen and (max-width: 768px) {
-    display: block;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
   }
 }

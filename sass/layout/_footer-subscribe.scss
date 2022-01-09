@@ -1,11 +1,12 @@
-.footer-subscribe-section {
+.footer-subscribe {
   // margin-top: 12px;
   // margin-left: auto;
+
   margin-top: 60px;
   text-align: center;
 }
 
-.footer-subcribe-title {
+.footer-subcribe__title {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -14,7 +15,7 @@
   color: #ffffff;
 }
 
-.footer-subcribe {
+.footer-subcribe__form {
   // display: flex;
   // align-items: center;
   // margin-top: 20px;
@@ -22,7 +23,7 @@
 
 .footer-subcribe__input {
   // width: 358px;
-  width: 100%;
+  width: 450px;
   height: 50px;
   font-size: 16px;
   font-weight: 400;
@@ -37,7 +38,7 @@
   margin-top: 20px;
 }
 
-.footer-subscribe__btn {
+.footer-subscribe__button {
   width: 200px;
   height: 50px;
   font-size: 16px;

@@ -638,38 +638,25 @@ header {
   padding: 60px 0;
 }
 
-.footer-container {
-  display: flex;
-}
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .footer-container {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
   }
 }
 
 .footer-contacts {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #acacb0;
-  text-decoration: none;
-  transition: color var(--timing-function);
   text-align: center;
 }
-.footer-contacts:hover, .footer-contacts:focus {
-  color: var(--brand-color-focus);
-}
 
-.footer-contacts .footer-list-item:not(:last-child) {
+.footer-contacts__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-@media screen and (max-width: 1600px) {
-  .footer-contacts .footer-list-item:not(:last-child) {
-    margin-bottom: 8px;
-  }
-}
-.footer-address {
+.footer-contacts__adress {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -677,18 +664,35 @@ header {
   color: #ffffff;
 }
 
-.footer-social-wrap {
+.footer-contacts__link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #acacb0;
+  text-decoration: none;
+  transition: color var(--timing-function);
+}
+.footer-contacts__link:hover, .footer-contacts__link:focus {
+  color: var(--brand-color-focus);
+}
+
+.footer-social {
   text-align: center;
   margin-top: 60px;
 }
+@media screen and (min-width: 768px) {
+  .footer-social {
+    margin: 0;
+  }
+}
 @media screen and (min-width: 1600px) {
-  .footer-social-wrap {
+  .footer-social {
     margin-top: 12px;
     margin-left: 70px;
   }
 }
 
-.footer-social-title {
+.footer-social__title {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -697,7 +701,7 @@ header {
   color: #ffffff;
 }
 
-.footer-social {
+.footer-social__list {
   display: flex;
   justify-content: center;
   margin-top: 20px;
@@ -729,12 +733,12 @@ header {
   border-radius: 50%;
 }
 
-.footer-subscribe-section {
+.footer-subscribe {
   margin-top: 60px;
   text-align: center;
 }
 
-.footer-subcribe-title {
+.footer-subcribe__title {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -744,7 +748,7 @@ header {
 }
 
 .footer-subcribe__input {
-  width: 100%;
+  width: 450px;
   height: 50px;
   font-size: 16px;
   font-weight: 400;
@@ -759,7 +763,7 @@ header {
   margin-top: 20px;
 }
 
-.footer-subscribe__btn {
+.footer-subscribe__button {
   width: 200px;
   height: 50px;
   font-size: 16px;

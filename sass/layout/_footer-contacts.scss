@@ -1,4 +1,30 @@
 .footer-contacts {
+  text-align: center;
+}
+
+.footer-contacts__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+// .footer-contacts .footer-list-item:not(:last-child) {
+//   margin-bottom: 9px;
+// }
+
+// @media screen and (max-width: 1600px) {
+//   .footer-contacts .footer-list-item:not(:last-child) {
+//     margin-bottom: 8px;
+//   }
+// }
+
+.footer-contacts__adress {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.footer-contacts__link {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -9,23 +35,4 @@
   &:focus {
     color: var(--brand-color-focus);
   }
-  text-align: center;
-}
-
-.footer-contacts .footer-list-item:not(:last-child) {
-  margin-bottom: 9px;
-}
-
-@media screen and (max-width: 1600px) {
-  .footer-contacts .footer-list-item:not(:last-child) {
-    margin-bottom: 8px;
-  }
-}
-
-.footer-address {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  font-style: normal;
-  color: #ffffff;
 }
