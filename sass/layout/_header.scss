@@ -4,15 +4,15 @@ header {
 
 .header {
   // width: 1170px;
-  padding: 16px 15px;
+  padding: 10px 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-  // @media screen and (max-width: 767px) {
-  //   padding: 16px 0;
-  // }
+  @media screen and (min-width: 768px) {
+    padding: 0 15px;
+  }
   // @media screen and (min-width: 1600px) {
   //   padding: 0 215px;
   // }
