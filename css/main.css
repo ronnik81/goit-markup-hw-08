@@ -416,12 +416,12 @@ header {
   }
 }
 
-.team-section {
+.team {
   background-color: #f5f4fa;
   padding: 60px 0;
 }
 
-.team-section__title {
+.team__title {
   font-weight: 700;
   font-size: 28px;
   line-height: 1.17;
@@ -431,13 +431,13 @@ header {
   margin-bottom: 30px;
 }
 @media screen and (min-width: 1600px) {
-  .team-section__title {
+  .team__title {
     font-size: 36px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .team-list {
+  .team__list {
     display: flex;
     flex-wrap: wrap;
     margin-right: -30px;
@@ -445,13 +445,13 @@ header {
   }
 }
 @media screen and (min-width: 1600px) {
-  .team-list {
+  .team__list {
     display: flex;
     justify-content: center;
   }
 }
 
-.team-list__item {
+.team__item {
   width: 450px;
   background-color: #fff;
   border-radius: 0px 0px 4px 4px;
@@ -459,58 +459,51 @@ header {
   margin-right: auto;
   margin-left: auto;
 }
-@media screen and (min-width: 768px) {
-  .team-list__item {
-    margin: 0;
-  }
-}
-@media screen and (min-width: 1600px) {
-  .team-list__item {
-    margin: 0;
-  }
-}
-.team-list__item img {
+.team__item img {
   width: 450px;
 }
 @media screen and (min-width: 768px) {
-  .team-list__item {
+  .team__item {
     width: 354px;
+    flex-basis: calc(100% / 2 - 30px);
+    margin-right: 30px;
+    margin-bottom: 30px;
   }
-  .team-list__item img {
+  .team__item img {
     width: 354px;
   }
 }
 @media screen and (min-width: 1600px) {
-  .team-list__item {
+  .team__item {
     width: 270px;
   }
-  .team-list__item img {
+  .team__item img {
     width: 270px;
   }
 }
 @media screen and (max-width: 767px) {
-  .team-list__item:not(:last-child) {
+  .team__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1600px) {
-  .team-list__item:not(:last-child) {
+  .team__item:not(:last-child) {
     margin-right: 30px;
     margin-bottom: 0;
   }
 }
 
-.team-list__card {
+.team-card {
   padding-top: 30px;
   padding-bottom: 24px;
 }
 @media screen and (min-width: 1600px) {
-  .team-list__card {
+  .team-card {
     padding-bottom: 30px;
   }
 }
 
-.team-list__title {
+.team-card__title {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.17;
@@ -520,7 +513,7 @@ header {
   margin-bottom: 10px;
 }
 
-.team-list__text {
+.team-card__text {
   font-size: 16px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -576,7 +569,7 @@ header {
   letter-spacing: 0.03em;
   color: var(--brand-color-main);
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .clients__list {
@@ -597,10 +590,19 @@ header {
   }
 }
 
-.clients__item {
-  flex-basis: calc(100% / 2 - 30px);
-  margin-right: 30px;
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .clients__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients__item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .clients__link {

@@ -10,7 +10,7 @@
   letter-spacing: 0.03em;
   color: var(--brand-color-main);
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .clients__list {
@@ -30,9 +30,16 @@
 }
 
 .clients__item {
-  flex-basis: calc(100% / 2 - 30px);
-  margin-right: 30px;
-  margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .clients__link {
