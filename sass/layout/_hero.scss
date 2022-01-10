@@ -27,7 +27,6 @@
       url(../images/head-mob.jpg);
   }
   @media screen and (min-width: 768px) {
-    // max-width: 768px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -35,7 +34,7 @@
       ),
       url(../images/head-desk.jpg);
   }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     padding: 200px 0;
     max-width: 1600px;
     min-height: 600px;
@@ -53,7 +52,7 @@
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     width: 696px;
     font-size: 44px;
     line-height: 1.36;
