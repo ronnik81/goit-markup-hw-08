@@ -307,15 +307,6 @@ header {
   }
 }
 
-.main-section {
-  padding-top: 60px;
-}
-@media screen and (min-width: 1600px) {
-  .main-section {
-    padding-top: 94px;
-  }
-}
-
 .features {
   padding: 60px 0;
 }
